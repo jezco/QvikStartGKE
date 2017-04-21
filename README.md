@@ -19,6 +19,13 @@ For this project you need to have billing enabled for your GCloud account.
 
 Create a new project on GCloud Console, Check your projectID from the project overview
 
+This is the id of your project in the Google Cloud Developers Console.
+
+Also replace [GCLOUD_PROJECT] in examplemodule1-deployment.yaml and
+examplemodule2-deployment.yaml with the id.
+
+Set the id also on config.js
+
 Set default project and authenticate with correct user:
 ```
 export PROJECT_ID=[PROJECT_ID]

@@ -22,6 +22,8 @@ nconf
     CLOUD_BUCKET: 'qvikstartgke-examplebucket',
 
     // This is the id of your project in the Google Cloud Developers Console.
+    // Also replace [GCLOUD_PROJECT] in examplemodule1-deployment.yaml and
+    // examplemodule2-deployment.yaml
     GCLOUD_PROJECT: 'qvikstartgke',
 
     // Port the HTTP server

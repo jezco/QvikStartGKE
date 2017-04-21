@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: example-image-app
-        image: eu.gcr.io/qvikstartgke/example-image
+        image: eu.gcr.io/[GCLOUD_PROJECT]/example-image
         imagePullPolicy: Always
         ports:
         - name: http-server
