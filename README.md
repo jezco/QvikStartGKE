@@ -85,7 +85,7 @@ kubectl apply -f deployment/examplemodule1-service.yaml
 kubectl apply -f deployment/examplemodule2-service.yaml
 kubectl apply -f deployment/example-ingress.yaml
 ```
-After deploying check for healty pods and load balancer external id:
+After deploying check for healthy pods and load balancer external IP:
 ```
 
 kubectl get pods
