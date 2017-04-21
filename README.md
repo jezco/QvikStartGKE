@@ -13,6 +13,8 @@ https://cloud.google.com/sdk/
 https://nodejs.org/en/download/
 https://docs.docker.com/engine/installation/
 
+For this project you need to have billing enabled for your GCloud account.
+
 ## Auth and Scope
 
 Create a new project on GCloud Console, Check your projectID from the project overview
