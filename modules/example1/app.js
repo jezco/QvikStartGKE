@@ -12,7 +12,7 @@ class ExampleModule1 {
   }
 
   defineRoutes(app) {
-    // for testing the audio module, post
+    // for testing the view
     app.get('/ui', (req, res) => {
       ejs.renderFile(path.join(__dirname, 'views', 'index.html'), {}, (err, str) => {
         res.send(str);
