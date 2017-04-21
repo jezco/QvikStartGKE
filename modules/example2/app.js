@@ -14,7 +14,7 @@ class ExampleModule2 {
   }
 
   defineRoutes(app) {
-    // for testing the audio module, post
+    // for testing the examplemodule2
     app.get('/api/example2/entities/:key', (req, res) => {
       res.json({key: req.params.key, data: []});
     });
