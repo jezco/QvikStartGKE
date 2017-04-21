@@ -4,7 +4,7 @@ const Datastore = require('@google-cloud/datastore');
 const config = require('../../config.js');
 const logging = require('../../lib/logging.js');
 
-class ExampleModule2 {
+const ExampleModule2 = class ExampleModule2 {
 
   constructor(app) {
     this.defineRoutes(app);
@@ -21,6 +21,4 @@ class ExampleModule2 {
   }
 }
 
-exports.setup = (app) => {
-  exports.example2 = new ExampleModule2(app);
-}
+module.exports = ExampleModule2

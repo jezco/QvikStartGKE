@@ -5,7 +5,7 @@ const config = require('../../config.js');
 const logging = require('../../lib/logging.js');
 const path = require('path');
 
-class ExampleModule1 {
+const ExampleModule1 = class ExampleModule1 {
 
   constructor(app) {
     this.defineRoutes(app);
@@ -21,6 +21,4 @@ class ExampleModule1 {
   }
 }
 
-exports.setup = (app) => {
-  exports.example1 = new ExampleModule1(app);
-}
+module.exports = ExampleModule1
