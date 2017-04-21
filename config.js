@@ -19,10 +19,10 @@ nconf
   // 4. Defaults
   .defaults({
 
-    CLOUD_BUCKET: 'QvikStartGKE-examplebucket',
+    CLOUD_BUCKET: 'qvikstartgke-examplebucket',
 
     // This is the id of your project in the Google Cloud Developers Console.
-    GCLOUD_PROJECT: 'QvikStartGKE',
+    GCLOUD_PROJECT: 'qvikstartgke',
 
     // Port the HTTP server
     PORT: 8080
