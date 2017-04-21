@@ -1,0 +1,25 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: qvikstartgke-example2
+  labels:
+    app: qvikstartgke-example
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: qvikstartgke-example
+        tier: worker
+    spec:
+      # Remember to change these accordingly
+      containers:
+      - name: example-image-app
+        image: eu.gcr.io/qvikstartgke/example-image
+        imagePullPolicy: Always
+        ports:
+        - name: http-server
+          containerPort: 8080
+        env:
+        - name: MODULE
+          value: example2

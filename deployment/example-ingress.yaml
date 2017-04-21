@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: qvikstartgke-ingress
+spec:
+  backend:
+    serviceName: qvikstartgke-example1
+    servicePort: 80
+  rules:
+  #- host: mydomain.somewhere.com
+  - http:
+      paths:
+      - path: '/api/example1/*'
+        backend:
+          serviceName: qvikstartgke-example1
+          servicePort: 80
+      - path: '/api/example2/*'
+        backend:
+          serviceName: qvikstartgke-example2
+          servicePort: 80
