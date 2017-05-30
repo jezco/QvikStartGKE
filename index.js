@@ -28,8 +28,7 @@ const moduleName = process.env.MODULE;
 if(moduleName) {
   logging.info(`Loading routes from ${moduleName}`);
   const router = require(`./modules/${process.env.MODULE}/app.js`);
-  modules[moduleName] = router;
-  router.setup(app);
+  modules[moduleName] = new router(app);
 } else {
   logging.info('No MODULE variable found. Loading all modules');
   const modulesDir = "./modules";
@@ -38,10 +37,8 @@ if(moduleName) {
     // ensure app.js exists
     if (!fs.existsSync(modulePath)) return;
     logging.info(`Loading routes from ${moduleFileName}`);
-
     const router = require(`./${modulePath}`);
-    modules[moduleFileName] = router
-    router.setup(app);
+    modules[moduleFileName] = new router(app);
   });
 }
 
